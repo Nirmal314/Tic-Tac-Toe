@@ -1,10 +1,8 @@
-// circle 1
-// cross 2
-
 var count = 0;
 let p1, p2, s1, s2;
 let isStarted = false;
 let isWon = false;
+
 var arr = new Array(3);
 arr[0] = new Array(3);
 arr[1] = new Array(3);
@@ -31,10 +29,8 @@ function startGame() {
   } else if (
     validInputs.every((item) => s1 !== item) ||
     validInputs.every((item) => s2 !== item) ||
-    (s1 == "x" && s2 == "X") ||
-    (s1 == "X" && s2 == "x") ||
-    (s1 == "O" && s2 == "o") ||
-    (s1 == "o" && s2 == "O")
+    ((s1 == "X" || s1 == "x") && (s2 == "x" || s2 == "X")) ||
+    ((s1 == "O" || s1 == "o") && (s2 == "o" || s2 == "O"))
   ) {
     alert("Enter valid signs.");
     playAgain();
@@ -43,6 +39,7 @@ function startGame() {
     isStarted = true;
   }
 }
+
 function playAgain() {
   count = 0;
   for (var i = 1; i <= 9; i++) {
