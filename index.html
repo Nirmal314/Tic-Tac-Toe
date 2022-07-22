@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <div class="board">
+      <div class="info">
+        <p>
+          Player 1
+        </p>
+        <input type="text" id="p1" />
+        <p>
+          Sign for player 1
+        </p>
+        <input type="text" id="s1" />
+        <p>
+          Player 2
+        </p>
+        <input type="text" id="p2" />
+        <p>
+          Sign for player 2
+        </p>
+        <input type="text" id="s2" />
+        <div id="bgroup">
+          <button id="start" onclick="startGame()">Start Game</button>
+          <button id="play-again" onclick="playAgain()">Play Again</button>
+          <button id="reset" onclick="reset()">Reset Game</button>
+        </div>
+      </div>
+      <div class="grd">
+        <!-- box1 -->
+        <div id="b1" onclick="show(this.id)">
+          <div id="b1-circle" class="">O</div>
+          <div id="b1-cross">X</div>
+        </div>
+        <!-- box2 -->
+        <div id="b2" onclick="show(this.id)">
+          <div id="b2-circle">O</div>
+          <div id="b2-cross">X</div>
+        </div>
+        <!-- box3 -->
+        <div id="b3" onclick="show(this.id)">
+          <div id="b3-circle">O</div>
+          <div id="b3-cross">X</div>
+        </div>
+        <!-- box4 -->
+        <div id="b4" onclick="show(this.id)">
+          <div id="b4-circle">O</div>
+          <div id="b4-cross">X</div>
+        </div>
+        <!-- box5 -->
+        <div id="b5" onclick="show(this.id)">
+          <div id="b5-circle">O</div>
+          <div id="b5-cross">X</div>
+        </div>
+        <!-- box6 -->
+        <div id="b6" onclick="show(this.id)">
+          <div id="b6-circle">O</div>
+          <div id="b6-cross">X</div>
+        </div>
+        <!-- box7 -->
+        <div id="b7" onclick="show(this.id)">
+          <div id="b7-circle">O</div>
+          <div id="b7-cross">X</div>
+        </div>
+        <!-- box8 -->
+        <div id="b8" onclick="show(this.id)">
+          <div id="b8-circle">O</div>
+          <div id="b8-cross">X</div>
+        </div>
+        <!-- box9 -->
+        <div id="b9" onclick="show(this.id)">
+          <div id="b9-circle">O</div>
+          <div id="b9-cross">X</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
